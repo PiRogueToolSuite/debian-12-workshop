@@ -194,13 +194,13 @@ Version: 1.0.0~workshop
 Priority: optional
 Section: misc
 Maintainer: U+039b <hello@pts-project.org>
-Installed-Size: 68330
+Installed-Size: 68329
 Filename: ./pirogue-sample-data_1.0.0~workshop_all.deb
-Size: 69674228
-MD5sum: 7b330bebba8648a297b2376d1154b3d0
-SHA1: 98ec2b035099145a13fd88ecef207caf6cbceae4
-SHA256: 35c99726fd4f36d1b3e9fad9ec97afa24ace46446e984d4910d339c2b2d68cfa
-SHA512: 43b2687fb5e6071163911cad9055ebbf3373fd81ca9d7a16a3c0eb4c2935cb388c14a400e943c537fb835dd82ac224fc63ae6b9f3ce7586b829ad9af5fb3c47a
+Size: 69674012
+MD5sum: cf56ff6615b7805725857ae491edbe6c
+SHA1: a733e7bc512933c1e4121af1e80ab9ed93e44277
+SHA256: b31a46ad8dc6bfbfc5c0386ee101e5335ed3a2aaaec565ba86217f382ee7bdc0
+SHA512: a7fa7a1657effe67c7c4b24c34b207ca0a439b064cc2ca604fb373eb9335b9fedca79c6157cedddd830527d4fdad00dc7ba205bb46e87d1cd93e1c851d585999
 Homepage: https://github.com/PiRogueToolSuite/deb-packages
 Description: Install sample data for workshops
 
