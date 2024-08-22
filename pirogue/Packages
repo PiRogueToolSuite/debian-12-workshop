@@ -1,0 +1,525 @@
+Package: pirogue-admin
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 84
+Depends: python3-yaml, python3:any
+Filename: ./pirogue-admin_1.0.0_all.deb
+Size: 18644
+MD5sum: 91254ad9eb54a454ca3f165b6f6966f5
+SHA1: 0296d4a4f6b12e0f5822f43495ae6211e1e872a0
+SHA256: 716a46641af8ee884e5851f3dfa5404702dc949e9e1aec5ff681578c2b89cfcd
+SHA512: 9a0534dc4cfc78b57fe9ccb2e46c3ddbc356f8b2d288d8da292ecf2894be9470ca588ebba5bbf017f8b5b09b0706a21c6f355906e27f711b7649048a71d8a4a0
+Homepage: https://github.com/PiRogueToolSuite/pirogue-admin
+Description: PiRogue administration tool
+ This package features autodetection to facilitate PiRogue's deployment, and
+ coordinates configuration file updates alongside relevant service restarts
+ whenever the configuration is updated.
+
+Package: pirogue-ap
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 34
+Provides: pirogue-network-routing
+Depends: netfilter-persistent, iptables-persistent, hostapd, dnsmasq, rfkill, dhcpcd5
+Conflicts: pirogue-network-routing
+Filename: ./pirogue-ap_1.1.0_all.deb
+Size: 5292
+MD5sum: f09ce4790d4fb4057992a8fb32f43bc6
+SHA1: 31f5680b679f75062f6a685e7f8a9feb01196eb1
+SHA256: 9b157a4003da3caaffdec1b46ac6a586d27deddfc35f0511451310466b513e73
+SHA512: 052d5b5b94ff6102f8784ef035bcf3a94c862d27fe544a971b9ed471990d9ad4e5766c95fb8718d17a37cb7f4b091aaeaaeb0d279d51b9530077cb2464a53882
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install PiRogue wi-fi AP configuration
+
+Package: pirogue-ap
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 35
+Provides: pirogue-network-routing
+Depends: netfilter-persistent, iptables-persistent, hostapd, dnsmasq, rfkill, dhcpcd5
+Conflicts: pirogue-network-routing
+Filename: ./pirogue-ap_1.1.1_all.deb
+Size: 5784
+MD5sum: 192c0efcdb9ce63dea269a39edd39849
+SHA1: abd3f6d8c5850e76364903bea4b03a1247c17409
+SHA256: 649c63120b390eccabdea93387d5104d24dfa78c241d319caed3a0127bc71060
+SHA512: 59b81fd23c7bb471c7e686eb69d8ea66d1ab466e4d6e9c0138d8169fb030b61c10321aa54c5ce111d49186e1b287879bd4ee280348e1bdcd2af79c4490f98a0b
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install PiRogue wi-fi AP configuration
+
+Package: pirogue-ap
+Architecture: all
+Version: 1.1.2
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 35
+Provides: pirogue-network-routing
+Depends: netfilter-persistent, iptables-persistent, hostapd, dnsmasq, rfkill
+Conflicts: pirogue-network-routing
+Filename: ./pirogue-ap_1.1.2_all.deb
+Size: 6584
+MD5sum: 72772b952732764bca2a6a1ee7982db9
+SHA1: 1d3daa1f33a9c0044475d18cff1eaf96958e90ab
+SHA256: b13d74a21e5eb3ca373b3fc2a336539b84322ad7a42ff1b393d39a583053b0d5
+SHA512: 05997b597bb46ec31a799f24f5b45a4011c865b0f143148a469e4c2d49be9679dc50dedc76fb54486bb88c29456248855598e391f1e57497f461e0cd0450e311
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install PiRogue wi-fi AP configuration
+
+Package: pirogue-archive-keyring
+Architecture: all
+Version: 0.1
+Priority: optional
+Section: utils
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 17
+Filename: ./pirogue-archive-keyring_0.1_all.deb
+Size: 6458
+MD5sum: 0d7e281d2c633fec32f2025f82cdfc76
+SHA1: 974879a1cd7c4e100e262fd5fbbfa70bb813b5b4
+SHA256: 99a3babbbb0e005798a7de09626e7758ba1f7ba84c9624e8ac6952a99602fc1c
+SHA512: 9680c5aff1643cc67e0c9e3302f16228af45921ba624074f9ceee5dc333b0342e8f83745c9d48465eb1914bff7c940cdac9b6a65834e564e9b403175362f02be
+Description: GnuPG archive keys for the PiRogue repository
+ The PiRogue repository is digitally signed, and the corresponding public keys,
+ required by APT, are available in this package.
+
+Package: pirogue-base
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 9
+Depends: python3-pip, python3-systemd, pirogue-cli, pirogue-tools, pirogue-ap, pirogue-hat, pirogue-dashboard, pirogue-eve-collector, pirogue-flow-inspector, pirogue-maintenance, pirogue-screen-st7789-240x240 | pirogue-screen
+Filename: ./pirogue-base_1.1.0_all.deb
+Size: 2188
+MD5sum: ebb55297c94e7111abb3e74d47474ab7
+SHA1: 2569eca346e3cab4536f7b13665bc74005e741f6
+SHA256: 96bb6958e8ead70055e98d8f594056490d01fff81e867534038aa3dcae330353
+SHA512: fd9cc6e4b09358d1e03e48cab15eec516375f272ee47a5bcfd45a8e9b2b53ac91e827e8abf1aada09a46eba915f3fda5a9c64f33900f991aae3bdf76c5dbff64
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install all PiRogue packages
+
+Package: pirogue-base
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 9
+Depends: python3-pip, python3-systemd, pirogue-cli, pirogue-tools, pirogue-ap, pirogue-hat, pirogue-dashboard, pirogue-eve-collector, pirogue-flow-inspector, pirogue-maintenance, pirogue-screen-st7789-240x240 | pirogue-screen
+Recommends: pirogue-telemetry
+Filename: ./pirogue-base_1.1.1_all.deb
+Size: 2232
+MD5sum: 207433306b8815e3ee2cc54bf8fddb5a
+SHA1: a8fee483c3f7d27056ccb987e8ca7c6251ca1647
+SHA256: e31df89e038f2245f8f5bf6bfea962d249479b09ce63df74a81bf6a607a10e80
+SHA512: c7131823c84a2f4212a42cd5b9c948e1fe8f8c87452ecced53ec7c5ac629d79c914dad5da3783f771ac3bba1d217b4478a0f1dcc42827ce7f97dd810393d210a
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install all PiRogue packages
+
+Package: pirogue-base
+Architecture: all
+Version: 1.1.2
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 9
+Depends: python3-pip, python3-systemd, pirogue-cli, pirogue-tools, pirogue-ap, pirogue-hat, pirogue-dashboard, pirogue-eve-collector, pirogue-flow-inspector, pirogue-maintenance, pirogue-screen-st7789-240x240 | pirogue-screen, pirogue-archive-keyring
+Recommends: pirogue-telemetry
+Filename: ./pirogue-base_1.1.2_all.deb
+Size: 2320
+MD5sum: 43bff8269abb604de5d5265cd433e2f6
+SHA1: 88bdc2f684bc578ad7d5877630d8c0cd7d000c3c
+SHA256: e748e3ea2f6d4a9ff10072db597df1eceaea37e5db5996cc99d3316568d482b0
+SHA512: a99889fdc71673e19783b9d3fa072362dc3dae4e5b982d382d7bba3408bfffa4e49b9e27052b24e5ffaeb84cc814465a878dfc42d4699bf22e12f0654237b5f2
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install all PiRogue packages
+
+Package: pirogue-cli
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 202
+Depends: python3:any, python3-requests, python3-rich, python3-psutil, python3-semver, python3-pydbus, python3-libusb1, python3-netifaces, python3-yaml, python3-gi, python3-communityid, adb, frida, tshark, tcpdump
+Filename: ./pirogue-cli_1.1.0_all.deb
+Size: 30772
+MD5sum: 5c50187f19af9eaf80b240d8d125c6db
+SHA1: c1cb83f68105dcb20ca9fccc4463eedce8ccc43e
+SHA256: 498f669eca13677b94e951f3f16fd4576d895b55958490574f1108c2025aa15d
+SHA512: c67f517b057485e8ec2f62fd16edb5e1871eb575ec565ea2f4f23033b1f2f226302aabdf96da6acd9ef81c1dbcadc2d59384ac327c5c276ad773b4a945a2e021
+Homepage: https://github.com/PiRogueToolSuite/pirogue-cli
+Description: Provision PiRogue CLI tool
+
+Package: pirogue-cli
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 203
+Depends: python3:any, python3-requests, python3-rich, python3-psutil, python3-semver, python3-pydbus, python3-libusb1, python3-netifaces, python3-yaml, python3-gi, python3-communityid, adb, frida, tshark, tcpdump
+Filename: ./pirogue-cli_1.1.1_all.deb
+Size: 30800
+MD5sum: c2f6250e8ede202cbb9994cefcc3a8ef
+SHA1: ac8738dd7dfa55ddaea5109c390f0b439530df6e
+SHA256: 49b1e1274c34c530bc130e67e43fef4a057e25d48335f00da02c8f03c0b2d98b
+SHA512: 3c044f14f17143d5f0e450a64fb67dfb14ed047e2d6a71bbb96c30645608fc60fc3847b33130d5b3eeb12556a520d8980b7452adc18aaa755253c7c2a028fd06
+Homepage: https://github.com/PiRogueToolSuite/pirogue-cli
+Description: Provision PiRogue CLI tool
+
+Package: pirogue-cli
+Architecture: all
+Version: 1.1.2
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 203
+Depends: python3:any, python3-requests, python3-rich, python3-psutil, python3-semver, python3-pydbus, python3-libusb1, python3-netifaces, python3-yaml, python3-gi, python3-communityid, adb, frida, tshark, tcpdump
+Filename: ./pirogue-cli_1.1.2_all.deb
+Size: 30896
+MD5sum: c1d9babbf9b5facfb90896983af2005c
+SHA1: 0a45ddd11e71c0829eb124fcf17ee165e6c71950
+SHA256: 9b0f85caa38e60e144b9b4e6fd36e8ad2ab380cd95f93d411e042111ed02efab
+SHA512: e0278dd7f2650fa408b0f5438ec9da40201181216c53aa77b625f5974c7e55467b3e1e655c33a706200dbda6898757f944f314f0cfe47d99639f6223474bd533
+Homepage: https://github.com/PiRogueToolSuite/pirogue-cli
+Description: Provision PiRogue CLI tool
+
+Package: pirogue-cli
+Architecture: all
+Version: 1.1.3
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 203
+Depends: python3:any, python3-requests, python3-rich, python3-psutil, python3-semver, python3-pydbus, python3-libusb1, python3-netifaces, python3-yaml, python3-gi, python3-communityid, adb, frida, tshark, tcpdump
+Filename: ./pirogue-cli_1.1.3_all.deb
+Size: 30964
+MD5sum: 640f1fdc080b1a9d53543b4bb7cc315e
+SHA1: fbd49f0914cd764a9cb233bc56f8c65dfa0a4225
+SHA256: 645858eb46f3de388683eca2f417a633803e84d038c11bdc6a9c24a27a38e1ab
+SHA512: 00483403c022a916447a0ed55be8d7443f3258cc9ed184b39444bbad4ef64ee640a53a88c6bb44e6b09979c5024d112424b323625d755b7f5329e2af1735e50d
+Homepage: https://github.com/PiRogueToolSuite/pirogue-cli
+Description: Provision PiRogue CLI tool
+
+Package: pirogue-colander-connector
+Architecture: all
+Version: 1.0.3
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 45
+Depends: python3-rich, python3:any, python3-colander-client
+Filename: ./pirogue-colander-connector_1.0.3_all.deb
+Size: 7428
+MD5sum: ff55076560f210b2c065b589cfec63d8
+SHA1: 62e0a3df32c1501f0c7ec6924aad7222b41c7857
+SHA256: daff7686f9cf7b35300580257af65a1bc6663703351e35b06cbc63c50a2e2219
+SHA512: b24d6d14c5ff0d10e38c391396dce834eb0ded7cff14f99d50c61beed2611cc667046c4a9c8ea40d0d11f3ccd04294e558860c5717367e3ffae33cf7b9e37fdd
+Homepage: https://github.com/PiRogueToolSuite/pirogue-colander-connector
+Description: CLI interface to transfer data from the PiRogue to Colander.
+
+Package: pirogue-colander-connector
+Architecture: all
+Version: 1.0.4
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 45
+Depends: python3-rich, python3:any, python3-colander-client
+Filename: ./pirogue-colander-connector_1.0.4_all.deb
+Size: 7548
+MD5sum: 474e6a17fcae5d111f9a532d75864283
+SHA1: e06b4082888cc485115ea5f3367f209a55baeeb8
+SHA256: 1165220582ddb8b2760fe32737ae9a16707933cbcec28dd17d1999fbdc320c89
+SHA512: f1abb0b6adcf306aca90cf8938d5029ef73c09e4fc4513fe45d4189a8317d226af4df3969b82e1d0e668603677ac1d59b1007c233fb580de33f60a597eec2b43
+Homepage: https://github.com/PiRogueToolSuite/pirogue-colander-connector
+Description: CLI interface to transfer data from the PiRogue to Colander.
+
+Package: pirogue-colander-connector
+Architecture: all
+Version: 1.0.5
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 45
+Depends: python3-rich, python3:any, python3-colander-client
+Filename: ./pirogue-colander-connector_1.0.5_all.deb
+Size: 7856
+MD5sum: 7a66e28fa2a3655b1597ef04d3e5a2ed
+SHA1: 305e395e99bb9044f0aa49f5d0e03f868cf5db38
+SHA256: 3ae78851be921e57e6cafe48a7aafe28f3159e16093d54d355436c38f814e450
+SHA512: 4937c6ee6917fe2f615c8ad1b9936daa1acf33402df7ce13c74c5551d8eb2244f0eb7979f845666505a08a5c59cab11ed8bbd10dbcdb36d7053523aaf6e27b5d
+Homepage: https://github.com/PiRogueToolSuite/pirogue-colander-connector
+Description: CLI interface to transfer data from the PiRogue to Colander.
+
+Package: pirogue-colander-connector
+Architecture: all
+Version: 1.0.6
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 45
+Depends: python3-rich, python3:any, python3-colander-client
+Filename: ./pirogue-colander-connector_1.0.6_all.deb
+Size: 8028
+MD5sum: 217e4be0e118ddf1374eb0afa7fa79c2
+SHA1: 8e8940be2124d3ae240d1063cc8d42c2e1f5ed55
+SHA256: 90014496ea568e66b1b1f5e0b53a7c7f285efa583b1b5c5a6f4b980436de9b58
+SHA512: 11a40a167ac26f06c128af71862332103e41e74c468c0f1ac317e3798b7ccf454f5672f8f3739576e55212c22374a9a3b75c4684b9d3d1a6660e4c6d081a211e
+Homepage: https://github.com/PiRogueToolSuite/pirogue-colander-connector
+Description: CLI interface to transfer data from the PiRogue to Colander.
+
+Package: pirogue-dashboard
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 127
+Depends: grafana, influxdb
+Filename: ./pirogue-dashboard_1.1.0_all.deb
+Size: 19488
+MD5sum: eec47447d2195fcddd765cfac3e475da
+SHA1: fed0483e74bdf6fdcc77e94b70d73d9434f7cfd6
+SHA256: fc7dfcef76695377aec30fdd7eae07c880f613d6e8ed936880e366754606c6f5
+SHA512: 72537e48ad9fdf4b01b531e5e1fe47c554a8dee2dbef09948f0c2141fbd3d1dfb3e7092e4a5be9acd54c0bcdfe4cb48a3014b95953be3e295dec35de533db20e
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue dashboards
+
+Package: pirogue-dashboard
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 127
+Depends: grafana, influxdb
+Filename: ./pirogue-dashboard_1.1.1_all.deb
+Size: 19536
+MD5sum: c06592514446b5d099e875e9c7e0fd93
+SHA1: b8d58244bfe94acf0af681049fd3c1bc8d8c3d08
+SHA256: 61e3953675caf14e0b093805a2a09792b768fc0973a3af47cb63235fcfcbcf68
+SHA512: 446ebea3885602daf7f5c1ccc8694c225a495c6b65d2168856991fede80cdab58ae39d0dc56595fbc340af10502bb1dd0ee2490873f7348198df80937ed80270
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue dashboards
+
+Package: pirogue-eve-collector
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 85
+Depends: python3:any, suricata, influxdb, chronograf, python3-influxdb, python3-systemd
+Filename: ./pirogue-eve-collector_1.1.0_all.deb
+Size: 22632
+MD5sum: fefe52c3f3ddef6ab3fd3a0f1ab8a73a
+SHA1: f1a223557a12abbaab43c858abfdf86d6949943a
+SHA256: ac50e94569843e5578f8b2add54784965360c83ef13762a99b896d9b0f64df8d
+SHA512: 7dcfcd98eee1ee320d7683856784b2dd795d26339c8b5516d5b7ce04585ad1130029002e3d9c33c2dfffa76f0fca22f56d961cc9956abfbfe589b6311816778c
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue Suricata alarm collector
+
+Package: pirogue-flow-inspector
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 66756
+Depends: python3:any, influxdb, python3-influxdb, python3-nfstream, python3-numpy (>= 1:1.22), python3-communityid, python3-geoip2 (>= 4.5.0), python3-systemd, python3-netifaces
+Filename: ./pirogue-flow-inspector_1.1.0_all.deb
+Size: 21560128
+MD5sum: b943fa28cbea193af0732e6b072a3621
+SHA1: e2c8ab04b69a1a5aee394cf9f7dfee6f5685c80b
+SHA256: d0669cb4e66fe8863a3e07192ecae1777095f0207f833359520f4c86456a380d
+SHA512: 2b1f94431be6c30605151e8f3cbcda60e0a4b09e042a2ca8b9e9b2a8d867a3b5980b04a17b52ca91c401b957e68e3100ab5a375510714cb3ca46fbebe83bad6c
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue DPI
+
+Package: pirogue-hardware-detection
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 118
+Filename: ./pirogue-hardware-detection_1.1.0_all.deb
+Size: 13600
+MD5sum: 766f7cc635e38bda54ae3d0ad1693863
+SHA1: c57bbc0e3ce2a3181ddbbba74084072ab9a97c0f
+SHA256: 2c5771724cd1a10a30ccf34f02b4775bd60454832a117cbbfd70350ff14a3c36
+SHA512: 0b761623b1c9b62df1c81fd08d2880c2660a638d4cb522bb52372a58e106b1e132222c01c3c9020e623ab729489f74928a2bca37ef2ed05d74ec0c0559a1567b
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Automatically detect the hardware configuration during PiRogue installation
+
+Package: pirogue-hardware-detection
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 123
+Filename: ./pirogue-hardware-detection_1.1.1_all.deb
+Size: 14088
+MD5sum: 26d251c445f7e0bdfa6644cacaab52af
+SHA1: f54c5f315bb1770a860ec6cfddcbf2c9d4a21090
+SHA256: bdc9e66ee6b33081439183e8860e61479e9d2d8e8da48cd3ea2775590fef3da6
+SHA512: c4d793f908eb1f2288f23fd765828017e3636ad353b1e77a10e73555af381df02ab3f7ab75f79469c0b2b5afb8d242e7a1ae732fe2c8470b4d6c073dee64ea92
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Automatically detect the hardware configuration during PiRogue installation
+
+Package: pirogue-hat
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 16
+Depends: i2c-tools, pirogue-hardware-detection
+Conflicts: fake-hwclock
+Replaces: fake-hwclock
+Filename: ./pirogue-hat_1.1.0_all.deb
+Size: 3564
+MD5sum: da617c275b71561c20537f65dabb49c2
+SHA1: 80ee612725133bcce9ef89b8a41674906b351775
+SHA256: 3f2fe97fd95817b22ba224703277a7b8644d13d6aba297fffbb0f0eeeb049d03
+SHA512: 64faa6ce17d18c20a2077b5dfaab7c29a5818cd2906327f5f2d016fc0ec4fba7fa7061d74c02aee560d8a4d55c7dac95f191a0682791dbf34e18d75e11a6d94c
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install PiRogue's hat requirements
+
+Package: pirogue-maintenance
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 21
+Depends: suricata
+Filename: ./pirogue-maintenance_1.1.0_all.deb
+Size: 3260
+MD5sum: 41853d6176079dbd731699b4abde9492
+SHA1: 222d83a91606dc9c79214694f04547913a11db37
+SHA256: 0fa70720bb34aff105513c5ef9b886b5b715bf8907103053c572ebdd1e577975
+SHA512: 6da91827a350928a6687b925c186595eee7bb9f8020401374af25aeba1f2be8ca1717d9a5d078b7ef82a7ff0f0414abff60bff90b679aae3b31a925c1b76b62b
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue maintenance scripts
+
+Package: pirogue-screen-st7789-240x240
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 425
+Provides: pirogue-screen
+Depends: python3:any, influxdb, net-tools, python3-influxdb, python3-libgpiod, python3-numpy, python3-pil, python3-spidev, python3-systemd, pirogue-hardware-detection
+Recommends: raspi-vcgencmd
+Conflicts: pirogue-screen
+Replaces: pirogue-screen
+Filename: ./pirogue-screen-st7789-240x240_1.1.0_all.deb
+Size: 70288
+MD5sum: 685c8484931cc276e502dc20f618f652
+SHA1: cb1b5476223fc0865120627cf91e4a0d40179e50
+SHA256: d2c75e7825cb0d516a734ff075d4d0face42f9224b28f69cd7d35ead757b9d13
+SHA512: e12448b599a2c56fa49ad1b3a64c7868f7415bba4db055bb44aa13ac9c0882f5cd85ccbe3cad70aa2876ef2ab465705ced0ab3470ed273386968c57508e07b3f
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Provision PiRogue 240x240px ST7789 screen driver
+
+Package: pirogue-telemetry
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 45
+Depends: python3:any, python3-requests, python3-influxdb-client
+Filename: ./pirogue-telemetry_1.0.0_all.deb
+Size: 7164
+MD5sum: 70cbd3b9d04786bd594f5747a6ae9ab7
+SHA1: 433113377c34a3a8f7e81800def98f21f8b1ad06
+SHA256: 9bae201f7ff10b046528bb59d204d18bd273bb26cb0196ce9f728539c13a5b23
+SHA512: 53fd83e478662351c8061b51a87febcda39bb8970c9dfaa1faa294e6184fba1c26da7d697520be40b368b916fe7d0d26745d00e7f9e822dd34c69d51482d12eb
+Homepage: https://github.com/PiRogueToolSuite/pts-telemetry
+Description: Install the privacy-preserving telemetry system for PiRogue
+
+Package: pirogue-tools
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 9
+Depends: tcpdump, vim, git, gnupg2, htop, jq, screen, tmux, adb, python3-mvt, mitmproxy, frida, libimobiledevice-utils, apktool, unzip
+Filename: ./pirogue-tools_1.1.0_all.deb
+Size: 2280
+MD5sum: ae7760fd5f58c5921227743462e3e12e
+SHA1: 00160465b809cc68e9d22bea05fe87b7903cd486
+SHA256: 5e0d0b776e93555b8d236f33523f9e34f8af1bcb84409d12b55ee3331f12c809
+SHA512: c198e2a21755fe6b31ab3976cff136c1d07542ceebe6799735266bcab8f5105f279baf5b57c1729fa7113bc2d486d03b02cd6b88aa7b3ef125788aa6c0089828
+Homepage: https://github.com/PiRogueToolSuite/deb-packages
+Description: Install all PiRogue additional tools
+
+Package: python3-colander-client
+Architecture: all
+Version: 1.0.2
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 34
+Depends: python3-coreapi, python3:any
+Filename: ./python3-colander-client_1.0.2_all.deb
+Size: 6268
+MD5sum: b3362c326d0b504bde763bce5a4dc380
+SHA1: 1d11bef7365a5355fbf44f867d3dabfee0a01c6c
+SHA256: a3d3b7b0aea9b53b7d27c14f07eae2d5baf15dec720e25b2732d74859115ebab
+SHA512: 9b46b4fffe4e943b17e834588238b3ab53548a88d251763434a7136a669b5da45a4bd00c900ee2bb1c96e7d6a32d27562f7225219251cc2a23e760f39328f0ec
+Homepage: https://github.com/PiRogueToolSuite/colander-python-client
+Description: Colander REST API Python client.
+
+Package: python3-colander-client
+Architecture: all
+Version: 1.0.3
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 36
+Depends: python3-coreapi, python3:any
+Filename: ./python3-colander-client_1.0.3_all.deb
+Size: 6492
+MD5sum: 8e21af801daa30112290cee0f36910d6
+SHA1: bde2b433b386b1760ee9e87e9d7311e04692aa02
+SHA256: bd141c61c259393ea5c9d4315ceab8b68b5e9fb11878333ce512ce61bcfeb075
+SHA512: 46081ee21bf88b50c076a5868dc07fb9e11c1e2db2da9e48c9ff3c6c8a091e0935e2de55e6d41b5a6a4919e933b581846091a05a66abaca191268687ae2efbcc
+Homepage: https://github.com/PiRogueToolSuite/colander-python-client
+Description: Colander REST API Python client.
+
+Package: python3-colander-client
+Architecture: all
+Version: 1.0.4
+Priority: optional
+Section: misc
+Maintainer: U+039b <hello@pts-project.org>
+Installed-Size: 51
+Depends: python3-coreapi, python3-deprecated, python3:any
+Filename: ./python3-colander-client_1.0.4_all.deb
+Size: 8560
+MD5sum: ee412e3fc04cc3080f536af7a35317e5
+SHA1: 4667a0a9921ca7b4554685e254f8024e9c35f4e4
+SHA256: b0c24446a404986a0ac07b80f77241dc6f47acd94b651f1addfc22cdcb6b6039
+SHA512: a6def3511fb6ef5afc04c3c9a164a5f095733d37d8f0ea1e31865ce9de25e6cc2d9b1ac8f14d984adbb9d0c342af19d8aba1105be74c8184326bf85b622808f0
+Homepage: https://github.com/PiRogueToolSuite/colander-python-client
+Description: Colander REST API Python client.
+

@@ -1,0 +1,721 @@
+Package: chronograf
+Architecture: amd64
+Version: 1.9.1-1
+Priority: extra
+Section: default
+Maintainer: contact@influxdb.com
+Installed-Size: 97995
+Filename: ./chronograf_1.9.1-1_amd64.deb
+Size: 33711326
+MD5sum: fb85dc6f80bb1587f15c294ea4232800
+SHA1: 904028d504cf9ba4b748a8f6d992bf1bd066bd4c
+SHA256: 223802d0ff60a5a374f2c76acce7de5f708d97859853de07ec13164591b62f07
+SHA512: 27e849381295d457f7dd41d0687e2ce6139d1ee22eddf455ade5501c382c1f583b706e7ecda5f70901ca7ffbbd8d40a466aff5376b64c4c7a5f1ef9f777375bd
+Homepage: https://github.com/influxdata/chronograf
+Description: Open source monitoring and visualization UI for the entire TICK stack.
+License: AGPLv3
+Vendor: InfluxData
+
+Package: chronograf
+Architecture: arm64
+Version: 1.9.1-1
+Priority: extra
+Section: default
+Maintainer: contact@influxdb.com
+Installed-Size: 94247
+Filename: ./chronograf_1.9.1-1_arm64.deb
+Size: 31796802
+MD5sum: 5f4615b2f3b2c3eead0689633917f0cc
+SHA1: cde7da39559e8c9396197ebe6e04e21cf11ba459
+SHA256: a7c324b70776e50750428fdaf9bd23bb1c6e1ea2f5475cb2c6a8d44d10927c42
+SHA512: 313defa402137d444d5198528da9900c259b4f48501d2c0c70021c8e79981fd491a1b2346ac160edb4ad25994c954ea1037f889bb62d55583f21484092c31433
+Homepage: https://github.com/influxdata/chronograf
+Description: Open source monitoring and visualization UI for the entire TICK stack.
+License: AGPLv3
+Vendor: InfluxData
+
+Package: firmware-brcm80211
+Architecture: all
+Version: 1:20230625-2+rpt3
+Multi-Arch: foreign
+Priority: optional
+Section: non-free-firmware/kernel
+Source: firmware-nonfree
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 20222
+Suggests: initramfs-tools
+Filename: ./firmware-brcm80211_20230625-2+rpt3_all.deb
+Size: 12991026
+MD5sum: c6969295330abf711750906f883e5b5e
+SHA1: a65e9ea55a612c1f3e74335fc342bdfd694fbb33
+SHA256: 1f65779338f7e7671e2e2a655cac059811f8f3bbb00ae5c1eb2599e54a2bca4b
+SHA512: 63917b0530419de1722186eaa9e9631266bb6054c8e0e7111436a245205fbf9f3dae96e2cdae8ceba5121476e3cf06480eeb754f8bb5a5ccb929b94e41a3ccb9
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Description: Binary firmware for Broadcom/Cypress 802.11 wireless cards
+ This package contains the binary firmware for wireless network cards
+ supported by the brcmsmac or brcmfmac driver.
+ .
+ Contents:
+  * Broadcom 802.11 firmware, version 610.812 (brcm/bcm43xx-0.fw)
+  * Broadcom 802.11 firmware header, version 610.812
+    (brcm/bcm43xx_hdr-0.fw)
+  * Broadcom BCM43143 USB firmware (brcm/brcmfmac43143.bin)
+  * Broadcom BCM43143 SDIO firmware (brcm/brcmfmac43143-sdio.bin)
+  * Broadcom BCM43236 firmware (brcm/brcmfmac43236b.bin)
+  * Broadcom BCM43241 rev 0-3 firmware (brcm/brcmfmac43241b0-sdio.bin)
+  * Broadcom BCM43241 rev 4 firmware (brcm/brcmfmac43241b4-sdio.bin)
+  * Broadcom BCM43241 rev 5+ firmware (brcm/brcmfmac43241b5-sdio.bin)
+  * Broadcom BCM43242 firmware (brcm/brcmfmac43242a.bin)
+  * Broadcom BCM4329 firmware (brcm/brcmfmac4329-sdio.bin)
+  * Broadcom BCM4330 firmware (brcm/brcmfmac4330-sdio.bin)
+  * Broadcom BCM4330 Prowise PT301 tablet NVRAM
+    (brcm/brcmfmac4330-sdio.Prowise-PT301.txt)
+  * Broadcom BCM43340 Meegopad T08 HDMI stick NVRAM
+    (brcm/brcmfmac43340-sdio.meegopad-t08.txt)
+  * Broadcom BCM43340 PoV TAB-P1006W-232 tablet NVRAM
+    (brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt)
+  * Broadcom BCM43340 Predia Basic tablet NVRAM
+    (brcm/brcmfmac43340-sdio.predia-basic.txt)
+  * Broadcom BCM4334 firmware (brcm/brcmfmac4334-sdio.bin)
+  * brcm/brcmfmac4335-sdio.bin
+  * Cubietech Cubietruck Ampak AP6210 Wifi/BT NVRAM
+    (brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt,
+    brcm/brcmfmac43362-sdio.lemaker,bananapro.txt)
+  * Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
+    (brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt)
+  * Broadcom BCM43430a Chuwi Hi8 (CWI509) tablet NVRAM
+    (brcm/brcmfmac43430a0-sdio.ilife-S806.txt)
+  * brcm/brcmfmac43430-sdio.txt,
+    brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt,
+    brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
+  * Broadcom BCM43430 rev 0 firmware (brcm/brcmfmac43430a0-sdio.bin)
+  * BCM43430 NRVAM AP6212 config (brcm/brcmfmac43430-sdio.AP6212.txt,
+    brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt,
+    brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt,
+    brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt,
+    brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt)
+  * Broadcom BCM43430 Chuwi Vi8 Plus tablet NVRAM
+    (brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt)
+  * Broadcom BCM43430 Murata 1DX NVRAM
+    (brcm/brcmfmac43430-sdio.MUR1DX.txt)
+  * BCM43455 NVRAM for AzureWave AW-CM256SM
+    (brcm/brcmfmac43455-sdio.AW-CM256SM.txt,
+    brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt,
+    brcm/brcmfmac43455-sdio.pine64,pinenote-v1.1.txt,
+    brcm/brcmfmac43455-sdio.pine64,pinenote-v1.2.txt,
+    brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt,
+    brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt,
+    brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt,
+    brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.0.txt,
+    brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.1.txt,
+    brcm/brcmfmac43455-sdio.pine64,soquartz-blade.txt,
+    brcm/brcmfmac43455-sdio.pine64,soquartz-cm4io.txt,
+    brcm/brcmfmac43455-sdio.pine64,soquartz-model-a.txt)
+  * brcm/brcmfmac43455-sdio.txt,
+    brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt,
+    brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt,
+    brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.txt,
+    brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt,
+    brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.txt
+  * Broadcom BCM43436 firmware, version 9.88.4.77
+    (brcm/brcmfmac43436-sdio.bin,
+    brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.bin,
+    brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.bin)
+  * brcm/brcmfmac43436-sdio.clm_blob,
+    brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.clm_blob,
+    brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.clm_blob
+  * NVRAM file for BCM43436 (brcm/brcmfmac43436-sdio.txt,
+    brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.txt,
+    brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.txt)
+  * Broadcom BCM43436s firmware, version 7.45.96.s1
+    (brcm/brcmfmac43436s-sdio.bin,
+    brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.bin,
+    brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin)
+  * NVRAM file for BCM43436s (brcm/brcmfmac43436s-sdio.txt,
+    brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.txt,
+    brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.txt)
+  * Broadcom BCM43456 firmware, version 7.84.17.1
+    (brcm/brcmfmac43456-sdio.bin,
+    brcm/brcmfmac43456-sdio.raspberrypi,4-compute-module.bin,
+    brcm/brcmfmac43456-sdio.raspberrypi,400.bin)
+  * brcm/brcmfmac43456-sdio.clm_blob,
+    brcm/brcmfmac43456-sdio.raspberrypi,4-compute-module.clm_blob,
+    brcm/brcmfmac43456-sdio.raspberrypi,400.clm_blob
+  * NVRAM file for BCM43456 (brcm/brcmfmac43456-sdio.txt,
+    brcm/brcmfmac43456-sdio.raspberrypi,4-compute-module.txt,
+    brcm/brcmfmac43456-sdio.raspberrypi,400.txt)
+  * Broadcom BCM4350 rev 5+ firmware (brcm/brcmfmac4350c2-pcie.bin)
+  * Broadcom BCM4350 rev 0-4 firmware (brcm/brcmfmac4350-pcie.bin)
+  * Broadcom BCM43569 firmware (brcm/brcmfmac43569.bin)
+  * Broadcom BCM4356-PCIe NVRAM for GPD Pocket and Win
+    (brcm/brcmfmac4356-pcie.gpd-win-pocket.txt)
+  * Broadcom AP6356S WiFi module NVRAM
+    (brcm/brcmfmac4356-sdio.AP6356S.txt,
+    brcm/brcmfmac4356-sdio.firefly,firefly-rk3399.txt,
+    brcm/brcmfmac4356-sdio.khadas,vim2.txt,
+    brcm/brcmfmac4356-sdio.vamrs,rock960.txt)
+  * Broadcom BCM4358 firmware (brcm/brcmfmac4358-pcie.bin)
+  * Broadcom BCM43602 AP-mode firmware (brcm/brcmfmac43602-pcie.ap.bin)
+  * Broadcom BCM43602 firmware (brcm/brcmfmac43602-pcie.bin)
+  * Broadcom BCM4366 firmware (brcm/brcmfmac4366b-pcie.bin)
+  * Broadcom BCM4366 3x3 802.11 ac firmware
+    (brcm/brcmfmac4366c-pcie.bin)
+  * Broadcom BCM4371 firmware (brcm/brcmfmac4371-pcie.bin)
+  * Cypress CYW4373-USB firmware (brcm/brcmfmac4373.bin)
+  * Cypress CYW43012-SDIO firmware (cypress/cyfmac43012-sdio.bin,
+    brcm/brcmfmac43012-sdio.bin)
+  * Cypress CYW43012-SDIO CLM firmware
+    (cypress/cyfmac43012-sdio.clm_blob,
+    brcm/brcmfmac43012-sdio.clm_blob)
+  * Cypress CYW43340-SDIO firmware (cypress/cyfmac43340-sdio.bin,
+    brcm/brcmfmac43340-sdio.bin)
+  * Cypress CYW43362-SDIO firmware (cypress/cyfmac43362-sdio.bin,
+    brcm/brcmfmac43362-sdio.bin)
+  * Cypress CYW4339-SDIO firmware (cypress/cyfmac4339-sdio.bin,
+    brcm/brcmfmac4339-sdio.bin)
+  * Cypress CYW43430-SDIO firmware, version 7.45.98.118
+    (cypress/cyfmac43430-sdio.bin, brcm/brcmfmac43430-sdio.bin,
+    brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.bin,
+    brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.bin)
+  * Cypress CYW43430-SDIO CLM firmware
+    (cypress/cyfmac43430-sdio.clm_blob,
+    brcm/brcmfmac43430-sdio.clm_blob,
+    brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob,
+    brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.clm_blob)
+  * cypress/cyfmac43439-sdio.bin, brcm/brcmfmac43439-sdio.bin
+  * cypress/cyfmac43439-sdio.clm_blob, brcm/brcmfmac43439-sdio.clm_blob
+  * cypress/cyfmac43439-sdio.txt, brcm/brcmfmac43439-sdio.txt
+  * Cypress CYW43455-SDIO firmware, version 7.45.265
+    (cypress/cyfmac43455-sdio-standard.bin)
+  * Cypress CYW43455-SDIO CLM firmware
+    (cypress/cyfmac43455-sdio.clm_blob,
+    brcm/brcmfmac43455-sdio.clm_blob,
+    brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.clm_blob,
+    brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob,
+    brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.clm_blob,
+    brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.clm_blob,
+    brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.clm_blob)
+  * Cypress CYW43455-SDIO minimal firmware, version 7.45.241
+    (cypress/cyfmac43455-sdio-minimal.bin)
+  * Cypress CYW4354-SDIO firmware (cypress/cyfmac4354-sdio.bin,
+    brcm/brcmfmac4354-sdio.bin)
+  * Cypress CYW4354-SDIO CLM firmware (cypress/cyfmac4354-sdio.clm_blob,
+    brcm/brcmfmac4354-sdio.clm_blob)
+  * Cypress CYW4356-PCIE firmware (cypress/cyfmac4356-pcie.bin,
+    brcm/brcmfmac4356-pcie.bin)
+  * Cypress CYW4356-PCIE CLM firmware (cypress/cyfmac4356-pcie.clm_blob,
+    brcm/brcmfmac4356-pcie.clm_blob)
+  * Cypress CYW4356-SDIO firmware (cypress/cyfmac4356-sdio.bin,
+    brcm/brcmfmac4356-sdio.bin)
+  * Cypress CYW4356-SDIO CLM firmware (cypress/cyfmac4356-sdio.clm_blob,
+    brcm/brcmfmac4356-sdio.clm_blob)
+  * Cypress CYW43570-PCIE firmware (cypress/cyfmac43570-pcie.bin,
+    brcm/brcmfmac43570-pcie.bin)
+  * Cypress CYW43570-PCIE CLM firmware
+    (cypress/cyfmac43570-pcie.clm_blob,
+    brcm/brcmfmac43570-pcie.clm_blob)
+  * Cypress CYW4373-SDIO firmware (cypress/cyfmac4373-sdio.bin,
+    brcm/brcmfmac4373-sdio.bin)
+  * Cypress CYW4373-SDIO CLM firmware (cypress/cyfmac4373-sdio.clm_blob,
+    brcm/brcmfmac4373-sdio.clm_blob)
+  * Cypress CYW54591-PCIE firmware (cypress/cyfmac54591-pcie.bin,
+    brcm/brcmfmac54591-pcie.bin)
+  * Cypress CYW54591-PCIE CLM firmware
+    (cypress/cyfmac54591-pcie.clm_blob,
+    brcm/brcmfmac54591-pcie.clm_blob)
+
+Package: frida
+Architecture: amd64
+Version: 16.0.19~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 191677
+Depends: python3 (<< 3.12), python3 (>= 3.11~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.0.19~pirogue1_amd64.deb
+Size: 57151160
+MD5sum: 27653a10527270366b897cce663afa2a
+SHA1: eed2fe273edeabf82d1cedcb13c38ca96c303809
+SHA256: a151b26fdb85d0b3885f5b5acb201e75e4005deaf750cf6770dbc02e99a30876
+SHA512: dfe3920fcb1567030871caab84fd5d444cb676743553458ede281d61d91474c6d6ee4c78b67eed966f85b661bb8e7c565a741a26264dbf461076a7a040e5eefe
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: frida
+Architecture: arm64
+Version: 16.0.19~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 165176
+Depends: python3 (<< 3.12), python3 (>= 3.11~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.0.19~pirogue1_arm64.deb
+Size: 49448084
+MD5sum: 1e4526904d07fa77e9559395b7bb25ef
+SHA1: 7aba7a51c1251128674d1422c2d2772b49d47126
+SHA256: 17537bd377fe42111cb2a18833636adde89c89b77332b8e0f94c79312a4fd307
+SHA512: 1e359c5cb5375eebecfaf08ad98d4856305e1fb5d0ff0c557605bcc493f9b07eb7f7ba930eb2f44e61f1aefee3720ea8bb5e427a66fc8578570051f26ea6364d
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: frida
+Architecture: amd64
+Version: 16.2.5~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 93269
+Depends: python3 (>= 3~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.2.5~pirogue1_amd64.deb
+Size: 31215884
+MD5sum: 86e765e95c4f299d116c48f1645a8e4f
+SHA1: 585aea00242d4f698afac663e114e9176e975287
+SHA256: 00d8f5e44919edb02ba90b75db4f46927bac21e343f628172e0a3f9cd8ecd141
+SHA512: 377fddb5b323d239575e276f652c793d1beb9dfd89f878aa92e51ea385e5e0cd5c1898556f8a479a58f8c024b92b4187ab19b1c4396048c7fae180216aebaf7e
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: frida
+Architecture: arm64
+Version: 16.2.5~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 109630
+Depends: python3 (>= 3~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.2.5~pirogue1_arm64.deb
+Size: 29814012
+MD5sum: cebed7467b0da855749d66c58ba35083
+SHA1: a2ee488a034841a4be03489e4a967930682b931d
+SHA256: 9f5076a71837ea0a3910930d6372d1df4748fe23004b91fc8de16a01136f03b4
+SHA512: 00b9bd0be2b507969067a0a68aa4841f71d936e67e2928166e3c31b80ae8ab1ca80d05ce06e271cbc102483ebdbc08b65dd659141d8980b7bb1a4763b7b59e5f
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: frida
+Architecture: amd64
+Version: 16.3.3~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 95393
+Depends: python3 (>= 3~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.3.3~pirogue1_amd64.deb
+Size: 31576832
+MD5sum: adcc22346e428fec88dc30e02ba06ccd
+SHA1: 3916c5b1c843a7e6e01c676642f7066d0c76f78c
+SHA256: 5be72d7ba9fca99aed6a2e71350874a20607c416ec60d7bd87146c78014ddcbd
+SHA512: e4fa10aa684ed0ae625addecf3ed77a37fa08167250f5c12fec6d91e7a270c766581b6c0fb8dceb419271950d83d943319d4dba0063ebaa7af58f64dd633d70b
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: frida
+Architecture: arm64
+Version: 16.3.3~pirogue1
+Priority: optional
+Section: python
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 111811
+Depends: python3 (>= 3~), python3:any, python3-colorama, python3-prompt-toolkit, python3-pygments, libc6 (>= 2.35)
+Filename: ./frida_16.3.3~pirogue1_arm64.deb
+Size: 30125948
+MD5sum: 7f33ac5fddcee552ef64b8d785dfdd80
+SHA1: ff00b7326815020d40f93f7f1627cd728db116b7
+SHA256: 4bfb2cb0d951fcea7a13b917177ca650b3e4930ce6334b919e2f6a1b96b05e40
+SHA512: eecc21f21e0d1d33159e77544fcd1f97704dc0f6cfd8b5afe6b60cef16364f7ba10c4ee556aed9cc396a8bcd98ad2ce1d0751deaa70116318abdd0155a5d9765
+Homepage: https://frida.re/
+Description: dynamic instrumentation toolkit for reverse-engineering
+ FIXME: Long description.
+
+Package: grafana
+Architecture: amd64
+Version: 8.1.5
+Priority: extra
+Section: default
+Maintainer: contact@grafana.com
+Installed-Size: 184676
+Depends: adduser, libfontconfig1
+Filename: ./grafana_8.1.5_amd64.deb
+Size: 57431320
+MD5sum: 6b33e79c23fc17b6b6ca21558622e258
+SHA1: 89a082d94657a0f0421bd3e7b39537504aee1c66
+SHA256: 3512041e3ff6adbd34a1c1823e29f6e149e5102db31b429238a69d40c32eda5f
+SHA512: d0013e5318f35f1eed2c6590e139fe4cd69fd68814e67187de3ddad2ef805333d9dc8605aa90cc7cea695fe47dba8012c8b3f8639eec7fcbc1e0cded889a4e51
+Homepage: https://grafana.com
+Description: Grafana
+License: "Apache 2.0"
+Vendor: Grafana
+
+Package: grafana
+Architecture: arm64
+Version: 8.1.5
+Priority: extra
+Section: default
+Maintainer: contact@grafana.com
+Installed-Size: 177539
+Depends: adduser, libfontconfig1
+Filename: ./grafana_8.1.5_arm64.deb
+Size: 53581406
+MD5sum: a5593d36514d5d0472f31ec2ef70cde9
+SHA1: b2eab20814fdf595b12ed8e36267ad9760478ca3
+SHA256: 4ad886214c7d14a6e744c325515427ec584220e4e0994734f3d8fdb0e2b4d00e
+SHA512: d68a68323c9c957ee889f9232bd078420b6625935559e21593df1d840fee48fe5f0a3aaebb7a1623312a4d320ee25336d754b212da8b3a061e38bf023512cd98
+Homepage: https://grafana.com
+Description: Grafana
+License: "Apache 2.0"
+Vendor: Grafana
+
+Package: influxdb
+Architecture: amd64
+Version: 1.8.10-1
+Priority: extra
+Section: default
+Maintainer: support@influxdb.com
+Installed-Size: 149777
+Depends: curl
+Filename: ./influxdb_1.8.10-1_amd64.deb
+Size: 54420884
+MD5sum: 4bfc39392cd8af40531d27c10425c7f9
+SHA1: 41a56bf05b97cac758ed1e6b58dc46b7e3fd2de4
+SHA256: b2ace09231575df7309a41cea6f9dc7ad716fe4389dc06ac04470a14bd411456
+SHA512: f35088826cb18094578821550e05d75faed80a0768955bafca0f1b5eb3d9cafb7710f08c05c90460b3404c012864d55e3ec86f3baf04230e4e9a46189d5319cd
+Homepage: https://influxdata.com
+Description: Distributed time-series database.
+License: Proprietary
+Vendor: InfluxData
+
+Package: influxdb
+Architecture: arm64
+Version: 1.8.10-1
+Priority: extra
+Section: default
+Maintainer: support@influxdb.com
+Installed-Size: 144319
+Depends: curl
+Filename: ./influxdb_1.8.10-1_arm64.deb
+Size: 50689260
+MD5sum: de6c15f5664997eb38bb288332395d55
+SHA1: 194301c51cd5bed0b54c31c25569d66913fb3b78
+SHA256: 3ae97d58798031bda4e51771df69df35fcf5d2c788bfe858dc6311d6b0b3d259
+SHA512: 152cce8d6dc3c68ba600f11df8503b1fbf517b1387c23ca790595457fa316213a805e3de81c72c6fa07104e63f2d4be3f5f255707bd17482b6eab2fcf2de97de
+Homepage: https://influxdata.com
+Description: Distributed time-series database.
+License: Proprietary
+Vendor: InfluxData
+
+Package: linux-image-6.6.31+rpt-rpi-2712
+Architecture: arm64
+Version: 1:6.6.31-1+rpt1
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Installed-Size: 32156
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-6.6, debian-kernel-handbook
+Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~)
+Filename: ./linux-image-6.6.31+rpt-rpi-2712_6.6.31-1+rpt1_arm64.deb
+Size: 29370304
+MD5sum: 39604541e8fbadd4462dd73670db77b7
+SHA1: 6ccc01351c99af91f1c9f35b56e12e2d1e429289
+SHA256: b1e05af46a29d12ccb7de0c2e961187404b99cdbdb8f009f5ddb5779d594016a
+SHA512: ea42c91112bae213bdb36229c93a315db9b3cc5638d45030e864614fe17834a73a0c464b7d36ffa274bb080b677e1f348de16841ba5114bef9af9bc46df15a67
+Homepage: https://github.com/raspberrypi/linux/
+Description: Linux 6.6 for Raspberry Pi 2712, Raspberry Pi
+ The Linux kernel 6.6 and modules for use on Raspberry Pi 2712 kernel.
+ .
+ This kernel includes the patches for Raspberry Pi platforms.
+
+Package: linux-image-rpi-2712
+Architecture: arm64
+Version: 1:6.6.31-1+rpt1
+Priority: optional
+Section: kernel
+Source: linux
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Installed-Size: 13
+Provides: linux-latest-modules-6.6.31+rpt-rpi-2712, wireguard-modules (= 1.0.0)
+Depends: linux-image-6.6.31+rpt-rpi-2712 (= 1:6.6.31-1+rpt1)
+Filename: ./linux-image-rpi-2712_6.6.31-1+rpt1_arm64.deb
+Size: 1432
+MD5sum: e78595307ddbfb0de80d5e81e02ccbca
+SHA1: 91c485bd77ce1d98c906651b770d0fe01111a7c4
+SHA256: f92f7f338b15c69b81365259bf0808396d3a0a609920e4449b3cc38d668c0c19
+SHA512: b6edd80b470c081a6a245aa7ffd7ae49f5468366de7c47d4ca3979ba70ccb5c1fa1015c6af292e209c00d1c6c1193d1971c39f6cf04853c59a829c5ff196540b
+Homepage: https://github.com/raspberrypi/linux/
+Description: Linux for Raspberry Pi 2712 (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ Raspberry Pi 2712 kernel.
+
+Package: python3-adb-shell
+Architecture: all
+Version: 0.4.2-1~pirogue2
+Priority: optional
+Section: python
+Source: adb-shell
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 233
+Depends: python3-cryptography, python3-pyasn1, python3-rsa, python3:any, python3-aiofiles, python3-usb1
+Filename: ./python/python3-adb-shell_0.4.2-1~pirogue2_all.deb
+Size: 27432
+MD5sum: 8976f58657058c35c48776abe969bead
+SHA1: 3b65daa42f4173481a8e1d5d5bf0548a37649602
+SHA256: 42b6443d1bdca3c079e67359f0fd8637263c52030fd53c7a904a429ab763d305
+SHA512: d06cd1e242ffe558cad4b3abddf443b027bcc57ea5b2ab2db0a848c246a51d360082b1987ace7969493878b4db90a8056e1715076cb99f5ab870e6add90b7385
+Homepage: https://github.com/JeffLIrion/adb_shell
+Description: Python implementation of ADB with shell and FileSync functionality
+ FIXME: Long description.
+
+Package: python3-ahocorasick-doc
+Architecture: all
+Version: 2.0.0-1~pirogue1
+Priority: optional
+Section: doc
+Source: ahocorasick
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 11
+Filename: ./python/python3-ahocorasick-doc_2.0.0-1~pirogue1_all.deb
+Size: 4296
+MD5sum: 349b3b78916af58fbd0dbaf443b4779b
+SHA1: cbef9fed76b7197db5dce87dcdb3807f604e9768
+SHA256: e11393bc2c3b37e44f3de9caf54275f48478208b64dd2ababd49dc184c56fd22
+SHA512: 410498a8355b8c2f28f44934f5b833c4ebde146ae8740d3ddc4e509bb53497e837f5fb506c108959190544f5e9559a98564c9a48a6d7823b8963e34a27105554
+Homepage: http://github.com/WojciechMula/pyahocorasick
+Description: documentation for the pyahocorasick Python library
+ This package provides documentation for pyahocorasick.
+
+Package: python3-ahocorasick
+Architecture: amd64
+Version: 2.0.0-1~pirogue1
+Priority: optional
+Section: python
+Source: ahocorasick
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 98
+Depends: python3 (<< 3.12), python3 (>= 3.11~), libc6 (>= 2.14)
+Filename: ./python/python3-ahocorasick_2.0.0-1~pirogue1_amd64.deb
+Size: 31956
+MD5sum: 36eb01eb5512d859c98fb22afa373e2b
+SHA1: 7eb2f9fc86719b77c29e839cad5275ecbe74c927
+SHA256: 4fcfe287afcff246580dfaa9c788f018f5d4d881ead4644b21364dc610c58f9c
+SHA512: da1eee90d324d3088c329db1402857d163850cebeef3b2598b586710c7f605079f231e658a2c80e71e62857048edcd971a53d8b7cd70b4733cad0ecca2697b20
+Homepage: http://github.com/WojciechMula/pyahocorasick
+Description: library for exact or approximate multi-pattern string
+ pyahocorasick is a fast and memory efficient library for exact or
+ approximate multi-pattern string search meaning that you can find
+ multiple key strings occurrences at once in some input text. The
+ strings “index” can be built ahead of time and saved (as a pickle) to
+ disk to reload and reuse later. The library provides an ahocorasick
+ Python module that you can use as a plain dict-like Trie or convert
+ a Trie to an automaton for efficient Aho-Corasick search.
+
+Package: python3-communityid
+Architecture: all
+Version: 1.4-1~pirogue2
+Priority: optional
+Section: python
+Source: communityid
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 64
+Depends: python3:any
+Filename: ./python/python3-communityid_1.4-1~pirogue2_all.deb
+Size: 12872
+MD5sum: e6e019a794f65d1f7e617c66e8ab88f1
+SHA1: 69f6991057ad3c9bb3a46dce794befc9c7069905
+SHA256: 9719e72af142f222d499afd0e5964ad54e8823de476a9f70f6c45f589fd27beb
+SHA512: d1dd281f2bbfa63eae030bd6bc12c314d2843e5b07dd9073fa234aabb0936bb399f2e0eca10b06529ec708b952217d75cd2c9b19e64a4daf6ed881cb83c9fbc7
+Homepage: https://github.com/corelight/pycommunityid
+Description: Community ID flow hashing
+ FIXME: Long description.
+
+Package: python3-geoip2
+Architecture: all
+Version: 4.5.0-1~pirogue2
+Priority: optional
+Section: python
+Source: geoip2
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 113
+Depends: python3-aiohttp, python3-maxminddb (>= 2.2.0), python3-requests, python3-urllib3, python3:any
+Filename: ./python/python3-geoip2_4.5.0-1~pirogue2_all.deb
+Size: 21932
+MD5sum: 47628c7faa7ed99233a402383cb2b042
+SHA1: 1d91d580568af376371e92dbb4f45185c2865a03
+SHA256: 7871f70310fdba03ffd9a17f7f2c1556d478b2bbafef99c41e413b8f4e29180f
+SHA512: 1e57dacac3b62cad1b44f247a133c86e96eabd5f1cec86947c024eb2bd57ecb22c770679f5ecdc2143fba7cb06bc8e4583083dbecb1c95de3906dcbc18df0572
+Homepage: http://www.maxmind.com/
+Description: MaxMind GeoIP2 API
+ FIXME: Long description.
+
+Package: python3-influxdb-client
+Architecture: all
+Version: 1.41.0-1~pirogue1
+Priority: optional
+Section: python
+Source: influxdb-client
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 4050
+Depends: python3-certifi, python3-dateutil, python3-pkg-resources, python3-reactivex, python3-urllib3, python3:any
+Filename: ./python/python3-influxdb-client_1.41.0-1~pirogue1_all.deb
+Size: 225180
+MD5sum: d358dd90b89d29af052ee3c8e852f8ba
+SHA1: 9221e8f05292ea08bd74a83a8ee31094c21dcb23
+SHA256: dc48813d6e3103c4fd0dd86ddfb592901cd9392cd09897626c3588a7a7f5764b
+SHA512: 76d3d34b31be7af30475d2f6a0e2b1d4a8eaa6712c52942b8d559e256d45671ff45b9acc4b4f3c936d0bb56b6484d510f27d6c7d69148f21fcd775e74bdb6d04
+Homepage: https://github.com/influxdata/influxdb-client-python
+Description: InfluxDB 2.0 Python client library
+ This package contains the Python client library for use with InfluxDB
+ 2.x and Flux.
+
+Package: python3-iosbackup
+Architecture: all
+Version: 0.9.923-1~pirogue2
+Priority: optional
+Section: python
+Source: iosbackup
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 82
+Depends: python3-nskeyedunarchiver, python3-pycryptodome, python3:any
+Filename: ./python/python3-iosbackup_0.9.923-1~pirogue2_all.deb
+Size: 17716
+MD5sum: 0c3c5c427990f77f783aeebc381c4ecb
+SHA1: 91b084fe178e988ee3c851d1bad9a1eede5a46cb
+SHA256: b4aa4898b5cea4fb35c62ed2df689a7338fe462b415808b0f8d01426637137e7
+SHA512: e2293364ecb5348ab4e41734297c0bda393e82e73bdcc55f621dac6dc5d1886e7307c957640cad74d648102890a8a5bbeb7447c630cdffb9d1ebda1ffb8aad39
+Homepage: https://github.com/avibrazil/iOSbackup
+Description: reads and extracts files from password-encrypted iOS backups
+ FIXME: Long description.
+
+Package: python3-mvt
+Architecture: all
+Version: 2.4.1-1~pirogue1
+Priority: optional
+Section: python
+Source: mvt
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 584
+Depends: python3-adb-shell, python3-ahocorasick, python3-appdirs (>= 1.4.4), python3-click, python3-cryptography (>= 38.0.1), python3-iosbackup, python3-packaging, python3-requests, python3-rich, python3-simplejson, python3-tld, python3-usb1, python3-yaml, python3:any
+Filename: ./python/python3-mvt_2.4.1-1~pirogue1_all.deb
+Size: 71396
+MD5sum: 8f958be002bf716fbcf0659ccf195c23
+SHA1: 04ece4db192b756d8c4724ced5a377deb17cb8c4
+SHA256: 75e790f1b3f296d7f2af866ff5895f3ad9bed811f9eea2476a071004b5255f33
+SHA512: c1453052429a6e4e580f8226c9519aa8ddae9b1b29ce767022bc1c89d38bcd15069cd0e29b40f3754b6cc5fa2da9f3219bf69ea72395ebd0700ae68dbcf04b38
+Homepage: https://github.com/mvt-project/mvt
+Description: Mobile Verification Toolkit
+ FIXME: Long description.
+
+Package: python3-nskeyedunarchiver
+Architecture: all
+Version: 1.5-1~pirogue2
+Priority: optional
+Section: python
+Source: nskeyedunarchiver
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 25
+Depends: python3:any
+Filename: ./python/python3-nskeyedunarchiver_1.5-1~pirogue2_all.deb
+Size: 4412
+MD5sum: eb801fe43c47d06d5f0bfae3a7e7eb6c
+SHA1: 842d8b8bb76a59876235d7b1b429d359895b670f
+SHA256: dce0bb8c227cae5b76b2029c31deb212c9c592e2f738029b6f86d7d8b73a0e99
+SHA512: 3262cb3687c80ddb9e765a92862bb2b267be43c24d9c436a0d55d5a3ba399169f085d5ad9e4a2a87d5d9e96a740914ec2529809cfe5b71ba2a58cf15651415d7
+Homepage: https://github.com/avibrazil/NSKeyedUnArchiver
+Description: decodes Apple's NSKeyedArchiver
+ FIXME: Long description.
+
+Package: python3-reactivex
+Architecture: all
+Version: 4.0.4-1~pirogue1
+Priority: optional
+Section: python
+Source: reactivex
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 777
+Depends: python3:any, python3-typing-extensions (>= 4.1.1)
+Filename: ./python/python3-reactivex_4.0.4-1~pirogue1_all.deb
+Size: 87572
+MD5sum: 9c931c5408daf50abf87241361967718
+SHA1: e27a9a49e7c4692bc09180059e1c0b991026c6b9
+SHA256: b23b7e511fa2e86ffe08e5f58f54c336bd795fc782c469b2f0ffeea0050c23a7
+SHA512: 86570f7b170bb2c27d978b873be397e6882ddea01d22d8586d8d5c66c6569d9cce9f7785eac39dfe58ff8db685e61d4846597f4f6ab13118ea5bbfadebb085bb
+Homepage: https://github.com/ReactiveX/RxPY
+Description: ReactiveX Python client library
+ This is a library for composing asynchronous and event-based programs
+ using observable collections and query operator functions in Python.
+
+Package: python3-nfstream
+Architecture: amd64
+Version: 6.3.5~ds3
+Priority: optional
+Section: net
+Source: nfstream
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 1854
+Depends: libc6 (>= 2.33), python3 (>= 3~), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3-dpkt (>= 1.9.2), python3-numpy, python3-pandas (>= 1.1.5), python3-psutil (>= 5.8.0), python3:any, python3-cffi (>= 1.14.5)
+Filename: ./python3-nfstream_6.3.5~ds3_amd64.deb
+Size: 416016
+MD5sum: d3ed61ea7acfec7503bc486091775daa
+SHA1: a79ed4846e1c52860ffa77befdd6f09a5a150429
+SHA256: bae38fc0ee7754cb666e66937a428eb2670d8e877adc4bb370942ce9c0d63ed8
+SHA512: 6447d7f6708fbb88d6be0236a34018eee8194b7b99fd08d69d00b44763684a0d2d116088df50fb8a32bc0196eb23ec058a7f4f622a9f1c204e085a976f74c17d
+Homepage: https://www.nfstream.org/
+Description: flexible network data analysis framework
+ NFStream is a multiplatform Python framework providing fast, flexible,
+ and expressive data structures designed to make working with online or
+ offline network data both easy and intuitive. It aims to be the
+ fundamental high-level building block for doing practical, real world
+ network data analysis in Python. Additionally, it has the broader goal
+ of becoming a common network data analytics framework for researchers
+ providing data reproducibility across experiments.
+
+Package: python3-nfstream
+Architecture: arm64
+Version: 6.3.5~ds3
+Priority: optional
+Section: net
+Source: nfstream
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 1946
+Depends: libc6 (>= 2.33), python3 (>= 3~), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3-dpkt (>= 1.9.2), python3-numpy, python3-pandas (>= 1.1.5), python3-psutil (>= 5.8.0), python3:any, python3-cffi (>= 1.14.5)
+Filename: ./python3-nfstream_6.3.5~ds3_arm64.deb
+Size: 377176
+MD5sum: fff270e09872df2d00a7932f3f0dd199
+SHA1: ba794e99c029016b45e369107aa9898badaf9dce
+SHA256: 9ec6e5e532a0182f0252b94a22b2f964e26db6be88adbc4ee63b0958a39df578
+SHA512: 91371fdaf36b8e9e9f48dd6a01a73b84319acc6c3981d30d1a44951e996b1f31d7105c182a7b32287d0c323d56cc7a87b16a87879b89af68cf8f05b585ae115d
+Homepage: https://www.nfstream.org/
+Description: flexible network data analysis framework
+ NFStream is a multiplatform Python framework providing fast, flexible,
+ and expressive data structures designed to make working with online or
+ offline network data both easy and intuitive. It aims to be the
+ fundamental high-level building block for doing practical, real world
+ network data analysis in Python. Additionally, it has the broader goal
+ of becoming a common network data analytics framework for researchers
+ providing data reproducibility across experiments.
+
+Package: raspi-vcgencmd
+Architecture: arm64
+Version: 0~git20230705
+Priority: optional
+Section: admin
+Source: raspi-userland
+Maintainer: Cyril Brulebois <cyril@debamax.com>
+Installed-Size: 216
+Depends: libc6 (>= 2.34)
+Filename: ./raspi-vcgencmd_0~git20230705_arm64.deb
+Size: 36520
+MD5sum: e6e37ada6c26f2d54ed5a84699dbc462
+SHA1: 25a5b41c2c67e36ea1b0f578f477057195a81ecb
+SHA256: ffc2015f6e54c59bac5907ef7582994d0f37d825a6282d5914a87d91a8a6ec31
+SHA512: 5756ddf2ec60c0a560a6a72d708dc84b1555aa4b6c963071c9ec0620c0ee8d60d59b07c27f0b3e80eb4aee63396be6b1e1e79e11e186f962ecdec1ad4f87bb4f
+Description: VideoCore query tool for Raspberry devices
+ vcgencmd is a command line utility that can get various pieces of
+ information from the VideoCore GPU on the Raspberry Pi.
+

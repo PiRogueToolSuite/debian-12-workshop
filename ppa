@@ -1,0 +1,135 @@
+#!/bin/sh
+set -e
+
+# Options management:
+options=$(getopt -l 'refresh,check' -o 'r,c' -- "$@")
+eval set -- "$options"
+while true; do
+  case "$1" in
+    -r|--refresh)
+      refresh=1
+      ;;
+    -c|--check)
+      check=1
+      ;;
+    --)
+      shift
+      break
+      ;;
+  esac
+  shift
+done
+
+
+# BEGIN: helper functions
+
+load_keys() {
+  # List known signing keys:
+  pirogue_keys=$(
+    gpg --no-default-keyring --keyring "$(pwd)/$KEYRING" --export \
+      | gpg --show-key --with-colons --keyid-format=long \
+      | grep -A 1 ^pub \
+      | grep ^fpr \
+      | awk -F: '{print $10}'
+  )
+
+  # List local keys:
+  local_keys=$(
+    gpg --list-secret-keys --with-colons --keyid-format=long \
+      | grep -A 1 ^sec \
+      | grep ^fpr \
+      | awk -F: '{print $10}'
+  )
+
+  # Any key in the intersection is fine:
+  signing_key=
+  for pk in $pirogue_keys; do
+    for lk in $local_keys; do
+      if [ "$pk" = "$lk" ]; then
+	signing_key=$lk
+      fi
+    done
+  done
+  if [ -z "$signing_key" ]; then
+    echo "E: Found no local keys matching PiRogue keys"
+    echo
+    echo "PiRogue keys:"
+    for key in $pirogue_keys; do
+      echo " - $key"
+    done
+    echo
+    echo "Local keys:"
+    for key in $local_keys; do
+      echo " - $key"
+    done
+    exit 1
+  fi
+}
+
+do_refresh() {
+  load_keys
+
+  for target in $TARGETS; do
+    echo "I: Indexing $target"
+    cd "$target"
+
+    # Forget old indices:
+    rm -f Packages* Release*
+
+    # Better be safe than sorry, apt can be unhappy with just an uncompressed
+    # file:
+    apt-ftparchive packages . > Packages
+    gzip -9n -k -f Packages
+
+    # Use a temporary file to avoid (broken) self-indexing:
+    apt-ftparchive release . > Release.tmp
+    mv Release.tmp Release
+
+    gpg --local-user "$signing_key" --armor --detach-sign --output Release.gpg Release
+    cd ..
+  done
+
+  echo "I: Refreshing OK"
+}
+
+do_check() {
+  errors=0
+  for target in $TARGETS; do
+    echo "I: Checking $target"
+    cd "$target"
+
+    apt-ftparchive packages . > Packages.check
+    if ! cmp -s Packages Packages.check; then
+      echo "E: $target/Packages is outdated"
+      diffcmd=$(which colordiff 2>/dev/null || which diff)
+      $diffcmd -u Packages Packages.check || true
+      errors=$((errors+1))
+    fi
+
+    rm -f Packages.check
+    cd ..
+  done
+
+  if [ "$errors" != 0 ]; then
+    echo "E: $errors spotted, please refresh: $0 -r"
+    exit 1
+  else
+    echo "I: Checking OK"
+  fi
+}
+
+# END: helper functions
+
+
+# Main body
+#
+#  - Configuration/usage:
+KEYRING=pirogue.gpg
+TARGETS="$*"
+if [ "$TARGETS" = '' ]; then
+  TARGETS='pirogue pirogue-3rd-party'
+fi
+
+#  - Actions:
+if [ "$refresh" = 1 ]; then do_refresh; fi
+if [ "$check"   = 1 ]; then do_check  ; fi
